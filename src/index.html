@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tauri Google Auth</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: sans-serif;
+      background: #1a1a2e;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 { font-size: 2rem; margin-bottom: 1rem; }
+    p { color: #aaa; margin-bottom: 2rem; }
+    button {
+      background: #4285f4;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover { background: #357abd; }
+    #user-info {
+      margin-top: 2rem;
+      display: none;
+    }
+    #user-info img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔥 Tauri Auth</h1>
+    <p>Login dengan akun Google lo</p>
+
+    <div id="login-section">
+      <button id="btn-login">Sign in with Google</button>
+    </div>
+
+    <div id="user-info">
+      <img id="user-photo" src="" alt="foto profil" />
+      <h2 id="user-name"></h2>
+      <p id="user-email"></p>
+      <button id="btn-logout">Logout</button>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
